@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>求人シェアリング ご提案資料 — 株式会社ROXX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    deck-stage:not(:defined){visibility:hidden}
+    :root{
+      --ink:#182030; --ink2:#0F1722; --paper:#FFFFFF; --mist:#F3F7FA; --line:#E3EAF1;
+      --green:#50C864; --blue:#00B9FF;
+      --grad:linear-gradient(350deg,#50C864 10%,#00B9FF 90%);
+      --jp:'Noto Sans JP',sans-serif; --latin:'Outfit',sans-serif;
+      --t-mega:212px; --t-title:74px; --t-sub:46px; --t-lead:38px; --t-body:29px; --t-small:24px; --t-kicker:24px;
+      --pad-x:120px; --pad-y:92px;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;}
+    h1,h2,h3,h4,p,ul,li{margin:0;padding:0;}
+    ul{list-style:none;}
+  </style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+<!-- ════════ 表紙 ════════ -->
+<section data-label="表紙" data-screen-label="Cover" data-speaker-notes="白基調のクリーンなエディトリアル表紙。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;justify-content:space-between;">
+    <div style="position:absolute;top:0;right:0;width:520px;height:100%;background:var(--mist);"></div>
+    <div style="position:absolute;top:-120px;right:120px;width:120px;height:1320px;background:var(--grad);transform:skewX(-16deg);border-radius:24px;opacity:.9;"></div>
+    <div style="position:absolute;top:-120px;right:300px;width:46px;height:1320px;background:var(--grad);transform:skewX(-16deg);border-radius:12px;opacity:.5;"></div>
+    <img src="assets/logo_primary.png" alt="zcareer platform" style="height:38px;width:auto;display:block;position:relative;">
+    <div style="position:relative;max-width:1000px;">
+      <div style="display:flex;align-items:center;gap:18px;margin-bottom:28px;">
+        <div style="width:32px;height:48px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+        <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#16A0C8;">Job Sharing Proposal</span>
+      </div>
+      <h1 style="font-family:var(--jp);font-weight:900;font-size:108px;line-height:1.08;color:var(--ink);">求人シェアリング</h1>
+      <p style="font-family:var(--jp);font-weight:700;font-size:var(--t-sub);margin-top:26px;color:var(--ink);">保有求人を、決定と収益に変える。</p>
+      <p style="font-family:var(--jp);font-weight:500;font-size:var(--t-body);color:#5C6B7A;margin-top:16px;">中堅・大手エージェント様向け ご提案資料</p>
+    </div>
+    <div style="position:relative;font-family:var(--latin);font-size:24px;letter-spacing:.06em;color:#9AA8B5;">株式会社ROXX　/　CONFIDENTIAL</div>
+  </div>
+</section>
+
+<!-- ════════ アジェンダ ════════ -->
+<section data-label="本日のご提案" data-screen-label="Agenda" data-speaker-notes="本日の流れ。課題→解→価値→AIエンジン共創、の順で10分。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#16A0C8;">Agenda</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);color:var(--ink);">本日のご提案</h2>
+    <div style="margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:34px 80px;">
+      <div style="display:flex;align-items:baseline;gap:28px;border-top:2px solid var(--line);padding-top:26px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:54px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">01</span>
+        <div><p style="font-weight:700;font-size:var(--t-lead);">エージェント経営の構造課題</p><p style="font-size:var(--t-small);color:#6A7886;margin-top:8px;">なぜ保有求人は「眠る」のか</p></div>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:28px;border-top:2px solid var(--line);padding-top:26px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:54px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">02</span>
+        <div><p style="font-weight:700;font-size:var(--t-lead);">求人シェアリングという解</p><p style="font-size:var(--t-small);color:#6A7886;margin-top:8px;">仕組みとプラットフォーム規模</p></div>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:28px;border-top:2px solid var(--line);padding-top:26px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:54px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">03</span>
+        <div><p style="font-weight:700;font-size:var(--t-lead);">中堅・大手にとっての3つの価値</p><p style="font-size:var(--t-small);color:#6A7886;margin-top:8px;">マネタイズ・決定力・ノーリスク</p></div>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:28px;border-top:2px solid var(--line);padding-top:26px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:54px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">04</span>
+        <div><p style="font-weight:700;font-size:var(--t-lead);">貴社専用 AI求人レコメンドエンジンの共創</p><p style="font-size:var(--t-small);color:#6A7886;margin-top:8px;">選考データの資産化</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 課題 ════════ -->
+<section data-label="構造課題" data-screen-label="Issue" data-speaker-notes="保有求人の大半は自社の登録者だけでは消化しきれず休眠している、という課題提起。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;align-items:center;gap:90px;">
+    <div style="position:absolute;top:-160px;right:-60px;width:360px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.07;border-radius:40px;"></div>
+    <div style="flex:1;position:relative;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:22px;">
+        <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+        <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">Issue</span>
+      </div>
+      <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);line-height:1.2;">エージェント経営の<br>構造課題</h2>
+      <p style="font-size:var(--t-lead);line-height:1.7;color:rgba(255,255,255,.82);margin-top:34px;max-width:660px;">コストをかけて開拓した求人の多くは、<br><span style="font-weight:700;color:#fff;">自社の求職者だけでは動かせず「休眠」</span>している。</p>
+      <p style="font-size:var(--t-body);line-height:1.7;color:rgba(255,255,255,.6);margin-top:24px;max-width:660px;">担当者の稼働も、職種カバー範囲も有限。保有求人が増えるほど、決定に至らない在庫が積み上がる。</p>
+    </div>
+    <div style="width:560px;position:relative;">
+      <p style="font-family:var(--latin);font-size:var(--t-small);letter-spacing:.12em;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:18px;">保有求人</p>
+      <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;">
+        <div style="aspect-ratio:1;border-radius:10px;background:var(--grad);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:var(--grad);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:var(--grad);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+        <div style="aspect-ratio:1;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);"></div>
+      </div>
+      <div style="display:flex;gap:30px;margin-top:24px;font-size:var(--t-small);">
+        <div style="display:flex;align-items:center;gap:10px;"><span style="width:18px;height:18px;border-radius:5px;background:var(--grad);display:inline-block;"></span><span style="color:rgba(255,255,255,.85);">動いている求人</span></div>
+        <div style="display:flex;align-items:center;gap:10px;"><span style="width:18px;height:18px;border-radius:5px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);display:inline-block;"></span><span style="color:rgba(255,255,255,.6);">休眠求人</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 市場文脈 ════════ -->
+<section data-label="求人量という競争力" data-screen-label="Market" data-speaker-notes="求人量が送客を呼び、送客が決定を生む。量＝競争力という市場文脈。競合名は出さない。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#16A0C8;">Market Context</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">求人量という競争力</h2>
+    <p style="font-size:var(--t-lead);color:#46545F;margin-top:24px;max-width:1100px;line-height:1.6;">求職者が集まるのは、選択肢＝<span style="font-weight:700;color:var(--ink);">求人量</span>が豊富なプラットフォーム。量が好循環の起点になる。</p>
+    <div style="margin-top:60px;display:flex;align-items:stretch;gap:0;">
+      <div style="flex:1;background:var(--mist);border-radius:20px 0 0 20px;padding:44px 40px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">01</span>
+        <p style="font-weight:700;font-size:32px;margin-top:14px;">求人量</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:10px;line-height:1.5;">幅広い選択肢が<br>求職者を惹きつける</p>
+      </div>
+      <div style="display:flex;align-items:center;padding:0 8px;font-family:var(--latin);font-size:40px;color:var(--blue);font-weight:300;">→</div>
+      <div style="flex:1;background:var(--mist);padding:44px 40px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">02</span>
+        <p style="font-weight:700;font-size:32px;margin-top:14px;">送客力</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:10px;line-height:1.5;">求職者が集まり<br>マッチ機会が増える</p>
+      </div>
+      <div style="display:flex;align-items:center;padding:0 8px;font-family:var(--latin);font-size:40px;color:var(--blue);font-weight:300;">→</div>
+      <div style="flex:1;background:var(--ink);color:#fff;padding:44px 40px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">03</span>
+        <p style="font-weight:700;font-size:32px;margin-top:14px;color:#fff;">決定数</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.66);margin-top:10px;line-height:1.5;">決定が次の求人を呼ぶ</p>
+      </div>
+      <div style="display:flex;align-items:center;padding:0 8px;font-family:var(--latin);font-size:40px;color:var(--green);font-weight:300;">↻</div>
+      <div style="flex:0 0 132px;background:var(--grad);border-radius:0 20px 20px 0;padding:44px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;">
+        <p style="font-weight:700;font-size:24px;line-height:1.45;">さらに<br>求人が<br>集まる</p>
+      </div>
+    </div>
+    <p style="font-size:var(--t-small);color:#9AA8B5;margin-top:34px;">量を持つ者が、送客と決定を制する。だからこそ「持ち寄って増やす」シェアリングが効く。</p>
+  </div>
+</section>
+
+<!-- ════════ 仕組み ════════ -->
+<section data-label="シェアリングの仕組み" data-screen-label="HowItWorks" data-speaker-notes="自社開拓求人をZCPに持ち寄り、約400社の社外CA網が送客。決定で収益が貴社に戻る。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">How It Works</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">求人シェアリングの仕組み</h2>
+    <div style="flex:1;display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:50px;">
+      <div style="flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:44px 36px;">
+        <p style="font-family:var(--latin);font-size:var(--t-small);letter-spacing:.1em;color:var(--blue);text-transform:uppercase;">Your Company</p>
+        <p style="font-weight:700;font-size:34px;margin-top:16px;line-height:1.35;">貴社の<br>保有・開拓求人</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.6);margin-top:18px;line-height:1.6;">自社で動かしきれない求人を共有</p>
+      </div>
+      <div style="font-family:var(--latin);font-size:34px;color:rgba(255,255,255,.4);">→</div>
+      <div style="flex:1.05;background:var(--grad);border-radius:22px;padding:44px 36px;box-shadow:0 30px 80px rgba(0,185,255,.22);">
+        <p style="font-family:var(--latin);font-size:var(--t-small);letter-spacing:.1em;color:rgba(255,255,255,.85);text-transform:uppercase;">Platform</p>
+        <p style="font-weight:700;font-size:34px;margin-top:16px;line-height:1.35;color:#fff;">Zキャリア<br>プラットフォーム</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.92);margin-top:18px;line-height:1.6;">求人を自動で公開・流通。掲載は無料</p>
+      </div>
+      <div style="font-family:var(--latin);font-size:34px;color:rgba(255,255,255,.4);">→</div>
+      <div style="flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:44px 36px;">
+        <p style="font-family:var(--latin);font-size:var(--t-small);letter-spacing:.1em;color:var(--green);text-transform:uppercase;">CA Network</p>
+        <p style="font-weight:700;font-size:34px;margin-top:16px;line-height:1.35;">約400社の<br>社外CA網</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.6);margin-top:18px;line-height:1.6;">各社が求職者を送客し選考へ</p>
+      </div>
+    </div>
+    <div style="margin-top:26px;display:flex;align-items:center;gap:18px;background:rgba(80,200,100,.1);border:1px solid rgba(80,200,100,.3);border-radius:16px;padding:22px 32px;">
+      <span style="font-family:var(--latin);font-weight:700;font-size:24px;color:var(--green);">RETURN</span>
+      <p style="font-size:var(--t-body);color:#fff;">決定が生まれると、<span style="font-weight:700;">完全成功報酬で貴社に収益が還元</span>される。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 規模 ════════ -->
+<section data-label="プラットフォームの規模" data-screen-label="Scale" data-speaker-notes="約400社のCA網、全国・全職種、完全成功報酬。規模の訴求。" style="background:var(--ink2);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="position:absolute;top:-160px;left:-90px;width:300px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.08;border-radius:40px;"></div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;position:relative;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">Platform Scale</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);position:relative;">送客を生む、ネットワークの規模</h2>
+    <div style="flex:1;display:flex;align-items:center;gap:64px;position:relative;">
+      <div style="flex:1;">
+        <p style="font-family:var(--latin);font-weight:800;font-size:160px;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">約400<span style="font-size:64px;">社</span></p>
+        <p style="font-weight:700;font-size:var(--t-lead);margin-top:8px;">送客を担う社外CA網</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.6);margin-top:12px;line-height:1.6;">業界最大級の人材紹介ネットワークが、<br>貴社の求人に求職者を送り込む。</p>
+      </div>
+      <div style="width:1px;height:300px;background:rgba(255,255,255,.14);"></div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:40px;">
+        <div>
+          <p style="font-family:var(--latin);font-weight:800;font-size:64px;line-height:1;color:#fff;">全国・全職種</p>
+          <p style="font-size:var(--t-body);color:rgba(255,255,255,.66);margin-top:10px;">医療・介護、地方、ハイレイヤー、希少領域まで広くカバー</p>
+        </div>
+        <div>
+          <p style="font-family:var(--latin);font-weight:800;font-size:64px;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">完全成功報酬</p>
+          <p style="font-size:var(--t-body);color:rgba(255,255,255,.66);margin-top:10px;">掲載は無料。決定が出たときだけコストが発生</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 価値オーバービュー ════════ -->
+<section data-label="3つの価値" data-screen-label="ValueOverview" data-speaker-notes="中堅・大手にとっての価値は3つ。マネタイズ・決定力・ノーリスク。次から1つずつ。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#16A0C8;">Value for You</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">中堅・大手にとっての価値</h2>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:54px;">
+      <div style="border:1px solid var(--line);border-radius:22px;padding:46px 38px;display:flex;flex-direction:column;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:60px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">01</span>
+        <p style="font-weight:700;font-size:34px;margin-top:22px;line-height:1.3;">休眠求人の<br>マネタイズ</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:18px;line-height:1.65;">動かせなかった求人が、約400社のCA網で決定に。追加開拓ゼロで収益化。</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:22px;padding:46px 38px;display:flex;flex-direction:column;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:60px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">02</span>
+        <p style="font-weight:700;font-size:34px;margin-top:22px;line-height:1.3;">自社CAの<br>決定力強化</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:18px;line-height:1.65;">扱える求人の幅が広がり、提案力と応諾・決定率が向上。</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:22px;padding:46px 38px;display:flex;flex-direction:column;background:var(--ink);color:#fff;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:60px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">03</span>
+        <p style="font-weight:700;font-size:34px;margin-top:22px;line-height:1.3;">ノーリスクでの<br>参画</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.66);margin-top:18px;line-height:1.65;">掲載無料・完全成功報酬・自動公開。始めるハードルが低い。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 価値① ════════ -->
+<section data-label="価値①マネタイズ" data-screen-label="Value1" data-speaker-notes="休眠求人のマネタイズ。これまで0円だった求人が決定時に収益化。追加開拓コストなし。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;align-items:center;gap:90px;">
+    <div style="flex:1;">
+      <span style="font-family:var(--latin);font-weight:700;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">VALUE 01</span>
+      <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);margin-top:14px;line-height:1.2;">休眠求人の<br>マネタイズ</h2>
+      <p style="font-size:var(--t-lead);color:#46545F;margin-top:30px;line-height:1.7;max-width:620px;">自社で動かせなかった求人を、<span style="font-weight:700;color:var(--ink);">約400社のCA網</span>が送客・決定。</p>
+      <p style="font-size:var(--t-body);color:#6A7886;margin-top:20px;line-height:1.7;max-width:620px;">これまで収益0円だった「眠っていた在庫」が、追加の開拓コストなしで動き出す。</p>
+    </div>
+    <div style="flex:0 0 600px;background:var(--mist);border-radius:24px;padding:54px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="text-align:center;">
+          <div style="width:150px;height:150px;border-radius:20px;background:#fff;border:2px dashed #C4D0DC;display:flex;align-items:center;justify-content:center;">
+            <span style="font-family:var(--latin);font-weight:700;font-size:48px;color:#AAB6C2;">¥0</span>
+          </div>
+          <p style="font-size:var(--t-small);color:#6A7886;margin-top:18px;">休眠求人</p>
+        </div>
+        <span style="font-family:var(--latin);font-size:48px;color:var(--blue);font-weight:300;">→</span>
+        <div style="text-align:center;">
+          <div style="width:150px;height:150px;border-radius:20px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 24px 60px rgba(0,185,255,.28);">
+            <span style="font-family:var(--latin);font-weight:800;font-size:46px;color:#fff;">¥</span>
+          </div>
+          <p style="font-size:var(--t-small);color:var(--ink);font-weight:700;margin-top:18px;">決定・収益化</p>
+        </div>
+      </div>
+      <p style="text-align:center;font-size:var(--t-small);color:#6A7886;margin-top:40px;line-height:1.6;">保有数が多い中堅・大手ほど、<br>マネタイズできる「在庫」が大きい。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 価値② ════════ -->
+<section data-label="価値②決定力" data-screen-label="Value2" data-speaker-notes="自社CAも他社のシェア求人を扱える。提案の幅が広がり応諾・決定率が向上。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;align-items:center;gap:90px;">
+    <div style="position:absolute;top:-160px;right:-60px;width:340px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.07;border-radius:40px;"></div>
+    <div style="flex:1;position:relative;">
+      <span style="font-family:var(--latin);font-weight:700;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">VALUE 02</span>
+      <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);margin-top:14px;line-height:1.2;">自社CAの<br>決定力強化</h2>
+      <p style="font-size:var(--t-lead);color:rgba(255,255,255,.82);margin-top:30px;line-height:1.7;max-width:620px;">シェアされた他社求人も、貴社のCAが扱える。</p>
+      <p style="font-size:var(--t-body);color:rgba(255,255,255,.62);margin-top:20px;line-height:1.7;max-width:620px;">提案できる求人の幅が一気に広がり、求職者を取りこぼさない。応諾率・決定率の底上げに直結する。</p>
+    </div>
+    <div style="flex:0 0 560px;position:relative;display:flex;flex-direction:column;gap:20px;">
+      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;">
+        <span style="font-size:var(--t-body);color:rgba(255,255,255,.85);">提案できる求人の幅</span>
+        <span style="font-family:var(--latin);font-weight:700;font-size:34px;color:var(--blue);">拡大</span>
+      </div>
+      <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;">
+        <span style="font-size:var(--t-body);color:rgba(255,255,255,.85);">求職者の取りこぼし</span>
+        <span style="font-family:var(--latin);font-weight:700;font-size:34px;color:var(--green);">減少</span>
+      </div>
+      <div style="background:var(--grad);border-radius:18px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 24px 60px rgba(0,185,255,.22);">
+        <span style="font-size:var(--t-body);color:#fff;font-weight:700;">応諾率・決定率</span>
+        <span style="font-family:var(--latin);font-weight:800;font-size:38px;color:#fff;">向上</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 価値③ ════════ -->
+<section data-label="価値③ノーリスク" data-screen-label="Value3" data-speaker-notes="掲載無料・完全成功報酬・自動公開で参画ハードルが低い。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <span style="font-family:var(--latin);font-weight:700;font-size:34px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">VALUE 03</span>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);margin-top:12px;">ノーリスクでの参画</h2>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:54px;">
+      <div style="background:var(--mist);border-radius:22px;padding:46px 38px;">
+        <p style="font-family:var(--latin);font-weight:700;font-size:30px;color:var(--blue);letter-spacing:.04em;">FREE</p>
+        <p style="font-weight:700;font-size:32px;margin-top:18px;">掲載は無料</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:16px;line-height:1.65;">求人の公開にコストはかからない。固定費リスクなし。</p>
+      </div>
+      <div style="background:var(--mist);border-radius:22px;padding:46px 38px;">
+        <p style="font-family:var(--latin);font-weight:700;font-size:30px;color:var(--blue);letter-spacing:.04em;">PAY ON SUCCESS</p>
+        <p style="font-weight:700;font-size:32px;margin-top:18px;">完全成功報酬</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:16px;line-height:1.65;">決定が出たときだけコストが発生。無駄打ちがない。</p>
+      </div>
+      <div style="background:var(--mist);border-radius:22px;padding:46px 38px;">
+        <p style="font-family:var(--latin);font-weight:700;font-size:30px;color:var(--blue);letter-spacing:.04em;">AUTOMATED</p>
+        <p style="font-weight:700;font-size:32px;margin-top:18px;">自動で公開</p>
+        <p style="font-size:var(--t-small);color:#6A7886;margin-top:16px;line-height:1.65;">求人データは自動変換で公開。現場の追加工数を最小化。</p>
+      </div>
+    </div>
+    <p style="font-size:var(--t-body);color:var(--ink);margin-top:40px;font-weight:500;">まずは保有求人の一部からでも、低リスクで始められる。</p>
+  </div>
+</section>
+
+<!-- ════════ CSVアップロード対応比較 ════════ -->
+<section data-label="CSV一括対応比較" data-screen-label="CSVCompare" data-speaker-notes="求人データ連携は3段階。手入力のみ→CSVアップロード→フォーマット変換込みCSVアップロード。フォーマット変換まで対応するのは業界でZキャリアプラットフォームのみという差別化。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#16A0C8;">Competitive Edge</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">求人データ連携、対応レベルの違い</h2>
+    <p style="font-size:var(--t-body);color:#46545F;margin-top:20px;max-width:1400px;line-height:1.6;">求人情報の連携方法は、そのまま現場の運用工数に直結する。<span style="font-weight:700;color:var(--ink);">フォーマット変換までカバーするのは、業界でZキャリアプラットフォームのみ。</span></p>
+    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:30px;margin-top:44px;align-items:stretch;">
+      <div style="border:1px solid var(--line);border-radius:22px;padding:40px 34px;display:flex;flex-direction:column;">
+        <p style="font-family:var(--latin);font-weight:600;font-size:22px;letter-spacing:.1em;color:#9AA8B5;text-transform:uppercase;">Level 1</p>
+        <p style="font-weight:700;font-size:36px;margin-top:14px;color:var(--ink);">A社</p>
+        <div style="height:2px;width:56px;background:var(--line);margin:24px 0;"></div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span style="width:26px;height:26px;border-radius:50%;background:var(--mist);border:1.5px solid #B9C4CF;color:#6A7886;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">✓</span>
+            <span style="font-size:var(--t-small);color:var(--ink);">システム上での手入力</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;opacity:.4;">
+            <span style="width:26px;height:26px;border-radius:50%;background:var(--mist);border:1.5px solid #D5DDE4;color:#AAB6C2;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;">–</span>
+            <span style="font-size:var(--t-small);color:#8A96A2;">CSVアップロード</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;opacity:.4;">
+            <span style="width:26px;height:26px;border-radius:50%;background:var(--mist);border:1.5px solid #D5DDE4;color:#AAB6C2;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;">–</span>
+            <span style="font-size:var(--t-small);color:#8A96A2;">フォーマット変換</span>
+          </div>
+        </div>
+        <p style="font-size:22px;color:#9AA8B5;margin-top:auto;padding-top:24px;line-height:1.6;">求人1件ごとに手入力。件数が増えるほど現場負担が増す。</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:22px;padding:40px 34px;display:flex;flex-direction:column;">
+        <p style="font-family:var(--latin);font-weight:600;font-size:22px;letter-spacing:.1em;color:#9AA8B5;text-transform:uppercase;">Level 2</p>
+        <p style="font-weight:700;font-size:36px;margin-top:14px;color:var(--ink);">B社</p>
+        <div style="height:2px;width:56px;background:var(--line);margin:24px 0;"></div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span style="width:26px;height:26px;border-radius:50%;background:var(--mist);border:1.5px solid #B9C4CF;color:#6A7886;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">✓</span>
+            <span style="font-size:var(--t-small);color:var(--ink);">システム上での手入力</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span style="width:26px;height:26px;border-radius:50%;background:var(--mist);border:1.5px solid #B9C4CF;color:#6A7886;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">✓</span>
+            <span style="font-size:var(--t-small);color:var(--ink);">CSVアップロード</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;opacity:.4;">
+            <span style="width:26px;height:26px;border-radius:50%;background:var(--mist);border:1.5px solid #D5DDE4;color:#AAB6C2;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;">–</span>
+            <span style="font-size:var(--t-small);color:#8A96A2;">フォーマット変換</span>
+          </div>
+        </div>
+        <p style="font-size:22px;color:#9AA8B5;margin-top:auto;padding-top:24px;line-height:1.6;">一括投入はできるが、自社フォーマットへの変換は現場作業のまま。</p>
+      </div>
+      <div style="border-radius:26px;padding:50px 44px;display:flex;flex-direction:column;background:var(--grad);box-shadow:0 44px 110px rgba(0,185,255,.36);position:relative;transform:scale(1.06);z-index:2;border:2px solid rgba(255,255,255,.35);">
+        <div style="position:absolute;top:-20px;right:32px;background:#fff;border-radius:999px;padding:11px 26px;box-shadow:0 12px 28px rgba(0,0,0,.16);">
+          <span style="font-family:var(--latin);font-weight:800;font-size:20px;letter-spacing:.06em;color:#16A0C8;">業界唯一</span>
+        </div>
+        <p style="font-family:var(--latin);font-weight:600;font-size:22px;letter-spacing:.1em;color:rgba(255,255,255,.85);text-transform:uppercase;">Level 3</p>
+        <p style="font-weight:800;font-size:42px;margin-top:14px;color:#fff;line-height:1.22;">Zキャリア<br>プラットフォーム</p>
+        <div style="height:3px;width:64px;background:rgba(255,255,255,.6);margin:26px 0;"></div>
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span style="width:27px;height:27px;border-radius:50%;background:rgba(255,255,255,.25);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">✓</span>
+            <span style="font-size:var(--t-small);color:#fff;">システム上での手入力</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <span style="width:27px;height:27px;border-radius:50%;background:rgba(255,255,255,.25);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">✓</span>
+            <span style="font-size:var(--t-small);color:#fff;">CSVアップロード</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.22);border-radius:14px;padding:12px 16px;margin:-6px -16px 0;">
+            <span style="width:30px;height:30px;border-radius:50%;background:#fff;color:#16A0C8;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;flex-shrink:0;">✓</span>
+            <span style="font-size:26px;color:#fff;font-weight:800;">フォーマット変換</span>
+          </div>
+        </div>
+        <p style="font-size:23px;color:rgba(255,255,255,.94);margin-top:auto;padding-top:28px;line-height:1.65;font-weight:500;">CSVをそのまま投げるだけでいい。フォーマット変換まで自動で完結し、現場の入力工数はほぼゼロに。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ アップロード時間シミュレーション ════════ -->
+<section data-label="アップロード時間比較" data-screen-label="TimeSim" data-speaker-notes="求人1万件を掲載する場合の所要時間試算。A社=手入力、B社=CSVアップロード+手動フォーマット調整、Zキャリアプラットフォーム=フォーマット自動変換。数字は仮定に基づく試算である旨を明記。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="position:absolute;top:-160px;right:-60px;width:360px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.07;border-radius:40px;"></div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;position:relative;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">Time Simulation</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);position:relative;">1万件アップロードで、ここまで差がつく</h2>
+    <p style="font-size:var(--t-body);color:rgba(255,255,255,.7);margin-top:20px;max-width:1300px;line-height:1.6;position:relative;">同じ1万件の求人でも、対応レベルによって実務時間はまったく違う。</p>
+    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:30px;margin-top:40px;align-items:stretch;position:relative;">
+      <div style="border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:40px 34px;display:flex;flex-direction:column;">
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.55);">A社（手入力のみ）</p>
+        <p style="font-family:var(--latin);font-weight:800;font-size:100px;line-height:1;margin-top:18px;color:#fff;">約833<span style="font-size:36px;">時間</span></p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.6);margin-top:14px;">営業日換算 約104日</p>
+        <p style="font-size:20px;color:rgba(255,255,255,.4);margin-top:auto;padding-top:26px;">10,000件 × 5分/件</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:40px 34px;display:flex;flex-direction:column;">
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.55);">B社（CSVアップロード）</p>
+        <p style="font-family:var(--latin);font-weight:800;font-size:100px;line-height:1;margin-top:18px;color:#fff;">約20<span style="font-size:36px;">時間</span></p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.6);margin-top:14px;">営業日換算 約3日</p>
+        <p style="font-size:20px;color:rgba(255,255,255,.4);margin-top:auto;padding-top:26px;">フォーマット変換 約20時間<br>（専門知識を持つ担当者が必要）</p>
+      </div>
+      <div style="border-radius:26px;padding:48px 42px;display:flex;flex-direction:column;background:var(--grad);box-shadow:0 44px 110px rgba(0,185,255,.36);position:relative;transform:scale(1.06);z-index:2;border:2px solid rgba(255,255,255,.35);">
+        <div style="position:absolute;top:-20px;right:32px;background:#fff;border-radius:999px;padding:11px 26px;box-shadow:0 12px 28px rgba(0,0,0,.16);">
+          <span style="font-family:var(--latin);font-weight:800;font-size:20px;letter-spacing:.04em;color:#16A0C8;">A社比 最大1,600倍</span>
+        </div>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.85);">Zキャリアプラットフォーム</p>
+        <p style="font-family:var(--latin);font-weight:800;font-size:130px;line-height:1;margin-top:18px;color:#fff;">約30<span style="font-size:40px;">分</span></p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.92);margin-top:14px;font-weight:700;">件数に関わらずほぼ一定</p>
+        <p style="font-size:20px;color:rgba(255,255,255,.85);margin-top:auto;padding-top:26px;">アップロードのみで完了。フォーマット変換は自動処理。</p>
+      </div>
+    </div>
+    <p style="font-size:20px;color:rgba(255,255,255,.4);margin-top:26px;line-height:1.6;position:relative;">※試算：A社＝手入力5分/件、B社＝フォーマット変換 約20時間、Zキャリアプラットフォーム＝フォーマット自動変換によりアップロード時間のみで算出（件数によらずほぼ一定）。実際の所要時間は運用条件により異なります。また、求人情報に欠損がある場合は、内容確認・補完のため別途対応が発生します。</p>
+  </div>
+</section>
+
+<!-- ════════ セクション扉：AIエンジン ════════ -->
+<section data-label="［扉］AIレコメンドエンジン" data-screen-label="Section-AI" data-speaker-notes="ここからが中堅・大手向けの差別化要素。求人の流通にとどまらず、貴社専用のAIマッチングを共創・資産化する。" style="background:var(--ink2);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;justify-content:center;">
+    <div style="position:absolute;top:-160px;right:-40px;width:420px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.16;border-radius:40px;"></div>
+    <div style="position:absolute;top:-160px;right:360px;width:80px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.3;border-radius:18px;"></div>
+    <div style="position:relative;max-width:1180px;">
+      <div style="display:inline-flex;align-items:center;gap:12px;background:rgba(80,200,100,.14);border:1px solid rgba(80,200,100,.4);border-radius:999px;padding:10px 22px;margin-bottom:30px;">
+        <span style="width:9px;height:9px;border-radius:50%;background:var(--green);display:inline-block;"></span>
+        <span style="font-family:var(--latin);font-weight:600;font-size:24px;letter-spacing:.14em;color:var(--green);">NEW — CO-CREATION</span>
+      </div>
+      <h2 style="font-family:var(--jp);font-weight:900;font-size:90px;line-height:1.14;">貴社専用の<br><span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">AI求人レコメンドエンジン</span><br>を共創・資産化</h2>
+      <p style="font-size:var(--t-lead);color:rgba(255,255,255,.74);margin-top:34px;max-width:980px;line-height:1.6;">求人シェアリングへのご参画は、単なる求人の流通にとどまらない。プラットフォームに蓄積される選考データを学習源に、<span style="font-weight:700;color:#fff;">貴社独自の高精度マッチングシステム</span>を構築する。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 選考データの資産化 ════════ -->
+<section data-label="選考データの資産化" data-screen-label="DataAsset" data-speaker-notes="社内CAだけでなく約400社の社外CAの推薦・選考・合否データがリアルタイムで蓄積し、貴社のアセットになる。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">Data as Asset</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">社外CA網の選考データを、自社アセットへ</h2>
+    <p style="font-size:var(--t-body);color:rgba(255,255,255,.7);margin-top:22px;max-width:1180px;line-height:1.6;">貴社の求人に対し、社内CAだけでなく約400社の社外CAからの<span style="font-weight:700;color:#fff;">「推薦・選考・合否データ」がリアルタイムで蓄積</span>される。</p>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:48px;margin-top:30px;">
+      <div style="display:flex;flex-direction:column;gap:18px;flex:0 0 380px;">
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px 30px;">
+          <p style="font-weight:700;font-size:26px;">社内CA</p>
+          <p style="font-size:var(--t-small);color:rgba(255,255,255,.55);margin-top:6px;">自社の推薦・選考データ</p>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:24px 30px;">
+          <p style="font-weight:700;font-size:26px;">約400社の社外CA</p>
+          <p style="font-size:var(--t-small);color:rgba(255,255,255,.55);margin-top:6px;">膨大な推薦・選考・合否データ</p>
+        </div>
+      </div>
+      <div style="font-family:var(--latin);font-size:40px;color:var(--blue);">→</div>
+      <div style="flex:0 0 420px;background:var(--grad);border-radius:24px;padding:54px 46px;text-align:center;box-shadow:0 36px 90px rgba(0,185,255,.26);">
+        <p style="font-family:var(--latin);font-weight:700;font-size:24px;letter-spacing:.1em;color:rgba(255,255,255,.9);">YOUR ASSET</p>
+        <p style="font-weight:700;font-size:38px;margin-top:18px;line-height:1.3;color:#fff;">貴社の<br>選考データ資産</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.92);margin-top:18px;line-height:1.6;">リアルタイムに積み上がり続ける、独自の学習ソース</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 進化するレコメンド ════════ -->
+<section data-label="進化するレコメンド精度" data-screen-label="LearningLoop" data-speaker-notes="大量の選考データをAIが学習・重み付け。どの属性がどの求人でどのリードタイムで内定に至るかの予測精度が自動的に進化し続ける。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#16A0C8;">Self-Improving</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">進化し続けるレコメンド精度</h2>
+    <p style="font-size:var(--t-body);color:#46545F;margin-top:20px;max-width:1180px;line-height:1.6;">大量の選考データをAIが学習・重み付けし、<span style="font-weight:700;color:var(--ink);">「どの求職者属性が、どの求人で、どれくらいのリードタイムで内定に至るか」</span>の予測精度が自動的に進化する。</p>
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:30px;margin-top:20px;">
+      <div style="flex:1;max-width:300px;text-align:center;background:var(--mist);border-radius:20px;padding:38px 28px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:30px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">01</span>
+        <p style="font-weight:700;font-size:27px;margin-top:14px;">選考データ蓄積</p>
+        <p style="font-size:24px;color:#6A7886;margin-top:10px;line-height:1.5;">400社の推薦・合否</p>
+      </div>
+      <span style="font-family:var(--latin);font-size:32px;color:var(--blue);">→</span>
+      <div style="flex:1;max-width:300px;text-align:center;background:var(--mist);border-radius:20px;padding:38px 28px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:30px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">02</span>
+        <p style="font-weight:700;font-size:27px;margin-top:14px;">AIが学習・重み付け</p>
+        <p style="font-size:24px;color:#6A7886;margin-top:10px;line-height:1.5;">内定要因をモデル化</p>
+      </div>
+      <span style="font-family:var(--latin);font-size:32px;color:var(--blue);">→</span>
+      <div style="flex:1;max-width:300px;text-align:center;background:var(--ink);color:#fff;border-radius:20px;padding:38px 28px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:30px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">03</span>
+        <p style="font-weight:700;font-size:27px;margin-top:14px;color:#fff;">高精度レコメンド</p>
+        <p style="font-size:24px;color:rgba(255,255,255,.6);margin-top:10px;line-height:1.5;">決定率・速度が向上</p>
+      </div>
+      <span style="font-family:var(--latin);font-size:32px;color:var(--green);">↻</span>
+    </div>
+    <p style="font-size:var(--t-small);color:#9AA8B5;margin-top:24px;text-align:center;">データが増えるほど賢くなる ── 使うほど決定が積み上がる学習ループ。</p>
+  </div>
+</section>
+
+<!-- ════════ 2つの提供形態 ════════ -->
+<section data-label="2つの提供形態" data-screen-label="TwoModels" data-speaker-notes="フルカスタマイズ版：選考基準・合否ロジックを100%反映した専用エンジン。パッケージ版：特定職種特化の高汎用モデルで、CA経験が浅くても高い応諾・決定率。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">Two Options</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">選べる、2つの提供形態</h2>
+    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:48px;">
+      <div style="border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:50px 46px;display:flex;flex-direction:column;">
+        <span style="font-family:var(--latin);font-weight:600;font-size:24px;letter-spacing:.12em;color:var(--blue);">FULL CUSTOM</span>
+        <p style="font-weight:900;font-size:42px;margin-top:16px;">フルカスタマイズ版</p>
+        <div style="height:2px;width:64px;background:var(--grad);margin:26px 0;"></div>
+        <p style="font-size:var(--t-body);color:rgba(255,255,255,.8);line-height:1.7;">貴社の選考基準や固有の合否ロジックを<span style="font-weight:700;color:#fff;">100%反映</span>した、貴社専用のマッチングエンジンを構築。</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.55);margin-top:auto;padding-top:28px;line-height:1.6;">自社の勝ちパターンをそのままモデル化したい大手・準大手向け。</p>
+      </div>
+      <div style="border-radius:24px;padding:50px 46px;display:flex;flex-direction:column;background:var(--grad);box-shadow:0 36px 90px rgba(0,185,255,.24);">
+        <span style="font-family:var(--latin);font-weight:600;font-size:24px;letter-spacing:.12em;color:rgba(255,255,255,.9);">PACKAGE</span>
+        <p style="font-weight:900;font-size:42px;margin-top:16px;color:#fff;">パッケージ版</p>
+        <div style="height:2px;width:64px;background:rgba(255,255,255,.7);margin:26px 0;"></div>
+        <p style="font-size:var(--t-body);color:#fff;line-height:1.7;">特定の職種・領域に特化。CAの経験が浅くても、<span style="font-weight:700;">即座に高い応諾・決定率</span>を生む高汎用モデル。</p>
+        <p style="font-size:var(--t-small);color:rgba(255,255,255,.85);margin-top:auto;padding-top:28px;line-height:1.6;">立ち上げスピードと再現性を重視する組織向け。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 導入ステップ ════════ -->
+<section data-label="導入のステップ" data-screen-label="Steps" data-speaker-notes="参画→自動公開・送客→選考データ蓄積→専用レコメンドエンジン提供、の4ステップ。" style="background:var(--paper);color:var(--ink);overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#16A0C8;">Onboarding</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);">導入のステップ</h2>
+    <div style="flex:1;display:flex;align-items:center;gap:0;margin-top:40px;">
+      <div style="flex:1;padding-right:30px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:50px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">01</span>
+        <p style="font-weight:700;font-size:28px;margin-top:14px;">参画・求人連携</p>
+        <p style="font-size:24px;color:#6A7886;margin-top:10px;line-height:1.55;">保有求人を連携。一部からでもOK。</p>
+      </div>
+      <div style="width:48px;height:2px;background:var(--line);"></div>
+      <div style="flex:1;padding:0 30px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:50px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">02</span>
+        <p style="font-weight:700;font-size:28px;margin-top:14px;">自動公開・送客開始</p>
+        <p style="font-size:24px;color:#6A7886;margin-top:10px;line-height:1.55;">自動変換で公開、CA網が送客。</p>
+      </div>
+      <div style="width:48px;height:2px;background:var(--line);"></div>
+      <div style="flex:1;padding:0 30px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:50px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">03</span>
+        <p style="font-weight:700;font-size:28px;margin-top:14px;">選考データ蓄積</p>
+        <p style="font-size:24px;color:#6A7886;margin-top:10px;line-height:1.55;">推薦・選考・合否がリアルタイムに。</p>
+      </div>
+      <div style="width:48px;height:2px;background:var(--line);"></div>
+      <div style="flex:1;padding-left:30px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:50px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">04</span>
+        <p style="font-weight:700;font-size:28px;margin-top:14px;">専用エンジン提供</p>
+        <p style="font-size:24px;color:#6A7886;margin-top:10px;line-height:1.55;">貴社のAIレコメンドを構築・提供。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ まとめ ════════ -->
+<section data-label="ご提案のまとめ" data-screen-label="Summary" data-speaker-notes="3つの価値＋AIエンジン共創。求人を流通させ、決定を生み、データを資産に変える。" style="background:var(--ink);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;">
+    <div style="position:absolute;top:-160px;right:-60px;width:340px;height:1440px;background:var(--grad);transform:skewX(-16deg);opacity:.08;border-radius:40px;"></div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px;position:relative;">
+      <div style="width:28px;height:42px;background:var(--grad);transform:skewX(-16deg);border-radius:4px;"></div>
+      <span style="font-family:var(--latin);font-size:var(--t-kicker);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);">Summary</span>
+    </div>
+    <h2 style="font-family:var(--jp);font-weight:900;font-size:var(--t-title);position:relative;">求人を、決定とデータ資産に変える</h2>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:26px;position:relative;max-width:1200px;">
+      <div style="display:flex;align-items:center;gap:28px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;flex:0 0 56px;">01</span>
+        <p style="font-size:var(--t-lead);color:#fff;"><span style="font-weight:700;">休眠求人をマネタイズ</span><span style="color:rgba(255,255,255,.6);font-size:var(--t-body);">　── 約400社のCA網が、眠った在庫を決定に変える</span></p>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.12);"></div>
+      <div style="display:flex;align-items:center;gap:28px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;flex:0 0 56px;">02</span>
+        <p style="font-size:var(--t-lead);color:#fff;"><span style="font-weight:700;">自社CAの決定力を強化</span><span style="color:rgba(255,255,255,.6);font-size:var(--t-body);">　── 提案の幅が広がり、応諾・決定率が上がる</span></p>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.12);"></div>
+      <div style="display:flex;align-items:center;gap:28px;">
+        <span style="font-family:var(--latin);font-weight:700;font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;flex:0 0 56px;">03</span>
+        <p style="font-size:var(--t-lead);color:#fff;"><span style="font-weight:700;">選考データを資産化</span><span style="color:rgba(255,255,255,.6);font-size:var(--t-body);">　── 貴社専用のAIレコメンドエンジンを共創</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ クロージング ════════ -->
+<section data-label="クロージング" data-screen-label="Closing" data-speaker-notes="まずは保有求人の一部から。次のステップへ。" style="background:var(--ink2);color:#fff;overflow:hidden;font-family:var(--jp);">
+  <div style="position:relative;width:100%;height:100%;padding:var(--pad-y) var(--pad-x);display:flex;flex-direction:column;justify-content:space-between;">
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) skewX(-16deg);display:flex;gap:40px;opacity:.1;">
+      <div style="width:130px;height:900px;background:var(--grad);border-radius:24px;"></div>
+      <div style="width:130px;height:900px;background:var(--grad);border-radius:24px;"></div>
+    </div>
+    <img src="assets/logo_reverse.png" alt="zcareer platform" style="height:38px;width:auto;display:block;position:relative;">
+    <div style="position:relative;text-align:center;">
+      <h2 style="font-family:var(--jp);font-weight:900;font-size:84px;line-height:1.2;">まずは、保有求人の<br><span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">一部から</span>。</h2>
+      <p style="font-size:var(--t-lead);color:rgba(255,255,255,.7);margin-top:30px;">低リスクで始め、決定とデータ資産を積み上げていく。</p>
+    </div>
+    <div style="position:relative;text-align:center;font-family:var(--latin);font-size:24px;letter-spacing:.06em;color:rgba(255,255,255,.5);">株式会社ROXX　/　Zキャリア プラットフォーム</div>
+  </div>
+</section>
+
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+</body>
+</html>
